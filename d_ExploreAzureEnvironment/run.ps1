@@ -22,7 +22,7 @@ if ($runResult) {
 }
 else {
     $status = [HttpStatusCode]::BadRequest
-    $body   = 'Supply a parameter of Run with a value between 0 and 4'
+    $body   = 'Supply a parameter of Run with a value between 0 and 3'
 }
 
 Push-OutputBinding -Name Response -Value ([HttpResponseContext]@{
